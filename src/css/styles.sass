@@ -1,0 +1,359 @@
+@import "mixins/mixins.sass"
+@import "mixins/adaptive-mixins.sass"
+@import "colors/colors.sass"
+
+body
+  margin: 41px 0 60px 0
+  font-family: "Poppins", sans-serif
+  box-sizing: border-box
+
+li
+  list-style: none
+
+ul
+  padding: 0
+  margin: 0
+
+a
+  text-decoration: none
+  cursor: pointer
+
+h1
+  color: $greetings-grey
+
+h1, h2
+  margin: 0
+
+p
+  color: $text-grey
+  margin: 0
+
+header
+  font-family: "DM Sans" ,sans-serif
+  @include flexAndGap(19.1vw)
+  @include marginSides(11vw, 0)
+
+
+  @include notebook()
+    @include flexAndGap(16vw)
+    @include marginSides(7.5vw, 0)
+
+.main-logo, .logo
+  object-fit: cover
+  @include notebook()
+    width: 87px
+
+.links
+  @include flexAndGap(51px)
+  @include notebook()
+    @include flexAndGap(41px)
+
+.navigation-list
+  margin-top: 8px
+  @include flexAndGap(66px)
+  @include notebook()
+    @include flexAndGap(41px)
+
+  &__text-link
+    color: $text-grey
+    transition: color 0.5s
+
+    &__header
+      color: $text-grey
+      transition: color 0.5s
+      @include adaptive_font(20)
+      @include notebook()
+        @include adaptive_font_tablet(16)
+
+  &__text-link:hover, &__text-link__header:hover
+    color: rgba($text-grey, 0.5)
+
+
+.links-list
+  margin-top: 5px
+  @include flexAndGap(20px)
+  @include notebook()
+    @include flexAndGap(15px)
+
+.link-icon
+  @include notebook()
+    width: 20px
+    height: auto
+
+// greetings banner, projects
+
+.greeting-banner
+  margin: 220px 13% 0 11vw
+  display: flex
+  justify-content: space-between
+  @include notebook()
+    margin: 130px 13% 0 11vw
+
+.greetings-container
+  padding-top: 50px
+  @include notebook()
+    padding-top: 30px
+
+.greetings
+  margin: 0
+  @include textSettings(58px, 700, 70px)
+  @include adaptive_font(58)
+  @include notebook()
+    @include textSettings(48px, 700, 50px)
+    @include adaptive_font(48)
+
+.gradient-text
+  color: transparent
+  background-image: linear-gradient(90deg, $gradient-blue -2.06%, $gradient-pink 100%)
+  background-clip: text
+
+.avatar
+  object-fit: cover
+  @include notebook()
+    width: 279px
+    //width: 25.9vw
+
+.tech-stack-banner
+  margin-top: 323px
+  @include notebook()
+    margin-top: 253px
+
+.tech-stack-banner
+  flex-direction: column
+  align-items: center
+  @include marginSides(134px, 130px) //184 201
+  @include flexAndGap(140px)
+  @include notebook()
+    @include marginSides(94px, 90px)
+    @include flexAndGap(100px)
+
+.tech-stack-headings, .project-headings
+  flex-direction: column
+  align-items: center
+  @include flexAndGap(49px)
+  @include notebook()
+    @include flexAndGap(29px)
+
+.tech-stack-remark, .project-remark
+  color: $text-grey
+  @include textSettings(32px, 400, 26px)
+  @include notebook()
+    @include textSettings(26px, 400, 24px)
+    @include adaptive_font(26)
+
+.tech-stack-heading, .project-heading
+  margin: 0
+  @include textSettings(48px, 900, 26px)
+  @include notebook()
+    @include textSettings(38px, 700, 24px)
+    @include adaptive_font(38)
+
+.tech-icons
+  width: 100%
+
+  &__list
+    justify-content: center
+    row-gap:  70px
+    column-gap: 104px
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(80px, 120px)) //repeat(6, 120px)
+    @include notebook()
+      row-gap:  50px
+      column-gap: 84px
+
+.tech-icon
+  object-fit: cover
+  @include notebook()
+    width: 100px
+    height: auto
+
+.tech-stack-remark
+  color: $text-grey
+
+.project-section
+  margin: 188px 189px 0 193px
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  @include flexAndGap(96px)
+  @include notebook()
+    margin: 188px 189px 0 193px
+    @include flexAndGap(56px)
+
+
+.project-cards
+  width: 100vw
+
+  &__list
+    @include desktop()
+      row-gap:  64px
+      column-gap: 47px
+      display: grid
+      justify-content: center
+      grid-template-columns: repeat(auto-fit, minmax(340px, 373px)) //repeat(3, 373px)
+    @include notebook()
+      display: grid
+      justify-content: center
+      grid-template-columns: repeat(auto-fit, minmax(340px, 373px)) //repeat(3, 373px)
+      row-gap:  54px
+      column-gap: 37px
+    @include tablet()
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+.card
+  box-shadow: 2px 2px 100px 0 $card-shadow
+  border-radius: 20px
+  transition: box-shadow 0.5s
+
+//.card-image
+  @include notebook()
+    width: 29.1vw
+
+.card:hover
+  box-shadow: 2px 2px 100px 0 rgba($card-shadow, 0.5)
+
+.card-info
+  padding: 23px 31px 25px 28px
+  flex-direction: column
+  @include flexAndGap(21px)
+
+.about-project-info
+  flex-direction: column
+  @include flexAndGap(12px)
+
+.small-card-info
+  flex-direction: column
+  @include flexAndGap(17px)
+
+.card-heading
+  color: $card-heading-color
+  @include textSettings(28px, 500, 26px)
+  @include notebook()
+    @include textSettings(24px, 500, 24px)
+
+.card-description
+  @include textSettings(18px, 300, 26px)
+  @include notebook()
+    @include textSettings(16px, 300, 24px)
+
+.project-stack
+  color: $greetings-grey
+  @include textSettings(14px, 300, 26px)
+  @include notebook()
+    @include textSettings(12px, 300, 24px)
+
+.bold
+  @include textSettings(16px, 400, 26px)
+  @include notebook()
+    @include textSettings(14px, 400, 24px)
+
+.project-links
+  @include flexAndGap(48px)
+  @include notebook()
+    @include flexAndGap(34px)
+
+.link-container
+  align-items: center
+  @include flexAndGap(12px)
+
+.link-container > img
+  width: 20px
+
+.project-link
+  color: $card-heading-color
+  border-bottom: 1px solid $card-heading-color
+  transition: color 0.5s, border-bottom-color
+  @include notebook()
+    @include textSettings(14px, 300, 24px)
+
+.project-link:hover
+  color: $text-grey
+  border-bottom: 1px solid $text-grey
+
+// footer//
+
+footer
+  margin-top: 209px
+  @include marginSides(180px, 209px)
+  @include notebook()
+    margin-top: 179px
+    @include marginSides(135px, 179px)
+
+.messengers-links
+  display: flex
+  justify-content: space-between
+  border-bottom: 2px solid $card-shadow
+  padding-bottom: 42px
+  @include notebook()
+    padding-bottom: 32px
+
+.contacts-links
+  align-items: center
+  margin-top: 5px
+  @include flexAndGap(93px)
+
+.messengers
+  @include flexAndGap(20px)
+  @include notebook()
+    @include flexAndGap(15px)
+
+.contacts
+  @include flexAndGap(74px)
+  @include notebook()
+    @include flexAndGap(44px)
+
+  &__contact
+    color: $greetings-grey
+    @include textSettings(16px, 400, 26px)
+    @include adaptive_font(16)
+    @include notebook()
+      @include textSettings(14px, 400, 24px)
+      @include adaptive_font(14)
+
+.footer-navigation
+  margin-top: 5px
+  @include textSettings(16px, 400, 26px)
+  @include adaptive_font(16)
+  @include flexAndGap(56px)
+  @include notebook()
+    @include textSettings(14px, 400, 24px)
+    @include adaptive_font(14)
+    @include flexAndGap(36px)
+
+.navigation-links
+  margin-top: 55px
+  padding-left: 10px
+  @include flexAndGap(176px)
+  @include notebook()
+    flex-direction: column
+    margin-top: 35px
+    padding-left: 7px
+    @include flexAndGap(26px)
+
+.footer-link
+  color: $greetings-grey
+
+.gradient-first
+  color: transparent
+  background-image: linear-gradient(90deg, $gradient-blue -2.06%,$gradient-pink 100%)
+  background-clip: text
+
+.gradient-second
+  color: transparent
+  background-image: linear-gradient(90deg, rgba(19,176,245,1) 0%, rgba(121,99,209,1) 0%, rgba(149,77,199,1) 53%, rgba(178,55,189,1) 100%, rgba(231,15,170,1) 100%)
+  background-clip: text
+
+.gradient-third
+  color: transparent
+  background-image: linear-gradient(90deg, rgba(19,176,245,1) 0%, rgba(121,99,209,1) 0%, rgba(149,77,199,1) 0%, rgba(178,55,189,1) 0%, rgba(231,15,170,1) 100%)
+  background-clip: text
+
+.copyright, .phone-number
+  @include textSettings(18px, 400, 26px)
+  @include adaptive_font(18)
+
+.copyright
+  @include notebook()
+    @include textSettings(16px, 400, 24px)

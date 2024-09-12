@@ -1,0 +1,32 @@
+@mixin desktop
+  @media screen and (min-width: $breakpoint-notebook-max)
+    @content
+
+@mixin notebook
+  @media screen and (max-width: $breakpoint-notebook-max) and (min-width: $breakpoint-notebook-min)
+    @content
+
+@mixin mobile
+  @media screen and (max-width: $breakpoint-tablet-min) and (min-width: $breakpoint-mobile-min )
+    @content
+
+@mixin tablet
+  @media screen and (max-width: $breakpoint-notebook-min) and (min-width: $breakpoint-tablet-min )
+    @content
+
+
+
+@mixin adaptive_font($font-size)
+  font-size:  calc(14px + ($font-size - 14) * (100vw / 1600))
+
+@mixin adaptive_font_mobile($font-size)
+  font-size:  calc(14px + ($font-size - 14) * (100vw / 480))
+
+@mixin adaptive_font_tablet($font-size)
+  font-size:  calc(14px + ($font-size - 14) * (100vw / 1280))
+
+$breakpoint-mobile-min: 320px
+$breakpoint-tablet-min: 480px
+$breakpoint-notebook-min: 768px
+$breakpoint-notebook-max: 1280px
+$breakpoint-desktop-max: 1600px
