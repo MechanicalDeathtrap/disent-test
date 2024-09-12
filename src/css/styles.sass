@@ -293,6 +293,8 @@ footer
   align-items: center
   margin-top: 5px
   @include flexAndGap(93px)
+  @include notebook()
+    @include flexAndGap(53px) ///
 
 .messengers
   @include flexAndGap(20px)
@@ -302,7 +304,7 @@ footer
 .contacts
   @include flexAndGap(74px)
   @include notebook()
-    @include flexAndGap(44px)
+    @include flexAndGap(24px)
 
   &__contact
     color: $greetings-grey
@@ -311,6 +313,11 @@ footer
     @include notebook()
       @include textSettings(14px, 400, 24px)
       @include adaptive_font(14)
+
+.messenger-icon
+  object-fit: cover
+  @include notebook()
+    width: 20px
 
 .footer-navigation
   margin-top: 5px

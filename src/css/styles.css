@@ -485,6 +485,12 @@ footer {
   display: flex;
   gap: 93px;
 }
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+  .contacts-links {
+    display: flex;
+    gap: 53px;
+  }
+}
 
 .messengers {
   display: flex;
@@ -504,7 +510,7 @@ footer {
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .contacts {
     display: flex;
-    gap: 44px;
+    gap: 24px;
   }
 }
 .contacts__contact {
@@ -522,6 +528,15 @@ footer {
     line-height: 24px;
     font-style: normal;
     font-size: calc(14px + 0vw);
+  }
+}
+
+.messenger-icon {
+  object-fit: cover;
+}
+@media screen and (max-width: 1280px) and (min-width: 768px) {
+  .messenger-icon {
+    width: 20px;
   }
 }
 
