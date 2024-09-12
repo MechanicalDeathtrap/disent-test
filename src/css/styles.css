@@ -291,6 +291,8 @@ header {
 
 .project-cards {
   width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 1280px) {
   .project-cards__list {
