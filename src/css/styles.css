@@ -2,6 +2,7 @@ body {
   margin: 41px 0 60px 0;
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 li {
