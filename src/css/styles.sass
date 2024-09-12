@@ -40,7 +40,7 @@ header
 .main-logo, .logo
   object-fit: cover
   @include notebook()
-    width: 87px
+    width: 77px
 
 .links
   @include flexAndGap(51px)
@@ -51,7 +51,8 @@ header
   margin-top: 8px
   @include flexAndGap(66px)
   @include notebook()
-    @include flexAndGap(41px)
+    display: flex
+    @include flexAndGap(38px)
 
   &__text-link
     color: $text-grey
@@ -72,7 +73,7 @@ header
   margin-top: 5px
   @include flexAndGap(20px)
   @include notebook()
-    @include flexAndGap(15px)
+    @include flexAndGap(10px)
 
 .link-icon
   @include notebook()
@@ -197,9 +198,10 @@ header
       justify-content: center
       grid-template-columns: repeat(2, 373px) //repeat(3, 373px)
       row-gap:  54px
-      column-gap: 37px
+      column-gap: 30px
     @include tablet()
       display: flex
+      gap: 20px
       flex-direction: column
       justify-content: center
 
@@ -277,7 +279,7 @@ footer
   @include marginSides(180px, 209px)
   @include notebook()
     margin-top: 179px
-    @include marginSides(135px, 179px)
+    @include marginSides(135px, 159px)
 
 .messengers-links
   display: flex
