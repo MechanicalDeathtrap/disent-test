@@ -429,8 +429,8 @@ header {
   .project-cards__list {
     display: grid;
     justify-content: center;
-    column-gap: 20px;
-    grid-template-columns: repeat(1, 290px);
+    row-gap: 20px;
+    grid-template-columns: repeat(1, 270px);
   }
 }
 
@@ -442,7 +442,7 @@ header {
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .card {
-    width: 290px;
+    width: 270px;
   }
 }
 
@@ -452,7 +452,7 @@ header {
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .card-image {
-    width: 290px;
+    width: 270px;
   }
 }
 
@@ -657,6 +657,13 @@ footer {
     margin-right: 12.4vw;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  footer {
+    margin-top: 100px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}
 
 .messengers-links {
   display: flex;
@@ -667,6 +674,11 @@ footer {
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .messengers-links {
     padding-bottom: 32px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .messengers-links {
+    padding-bottom: 25px;
   }
 }
 
@@ -682,6 +694,12 @@ footer {
     gap: 53px;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .contacts-links {
+    display: flex;
+    gap: 33px;
+  }
+}
 
 .messengers {
   display: flex;
@@ -693,6 +711,12 @@ footer {
     gap: 15px;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .messengers {
+    display: flex;
+    gap: 10px;
+  }
+}
 
 .contacts {
   display: flex;
@@ -702,6 +726,14 @@ footer {
   .contacts {
     display: flex;
     gap: 24px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
   }
 }
 .contacts__contact {

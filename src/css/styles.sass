@@ -253,8 +253,8 @@ header
     @include mobile()
       display: grid
       justify-content: center
-      column-gap: 20px
-      grid-template-columns: repeat(1, 290px)
+      row-gap: 20px
+      grid-template-columns: repeat(1, 270px)
 
 .card
   box-shadow: 2px 2px 100px 0 $card-shadow
@@ -262,14 +262,14 @@ header
   transition: box-shadow 0.5s
   width: 373px
   @include mobile()
-    width: 290px
+    width: 270px
 
 .card:hover
   box-shadow: 2px 2px 100px 0 rgba($card-shadow, 0.5)
 
 .card-image
   @include mobile()
-    width: 290px
+    width: 270px
 
 .card-info
   padding: 23px 31px 25px 28px
@@ -358,6 +358,9 @@ footer
   @include notebook()
     margin-top: 179px
     @include marginSides(10.5vw, 12.4vw)
+  @include mobile()
+    margin-top: 100px
+    @include marginSides(4vw, 4vw)
 
 .messengers-links
   display: flex
@@ -366,23 +369,33 @@ footer
   padding-bottom: 42px
   @include notebook()
     padding-bottom: 32px
+  @include mobile()
+    padding-bottom: 25px
 
 .contacts-links
   align-items: center
   margin-top: 5px
   @include flexAndGap(93px)
   @include notebook()
-    @include flexAndGap(53px) ///
+    @include flexAndGap(53px)
+  @include mobile()
+    @include flexAndGap(33px)
 
 .messengers
   @include flexAndGap(20px)
   @include notebook()
     @include flexAndGap(15px)
+  @include mobile()
+    @include flexAndGap(10px)
 
 .contacts
   @include flexAndGap(74px)
   @include notebook()
     @include flexAndGap(24px)
+  @include mobile()
+    display: flex
+    flex-direction: column
+    @include flexAndGap(10px)
 
   &__contact
     color: $greetings-grey
