@@ -8,7 +8,7 @@ body
   box-sizing: border-box
   overflow-x: hidden
   @include mobile()
-    margin: 21px 0 25px 0
+    margin: 15px 0 25px 0
 
 li
   list-style: none
@@ -40,7 +40,7 @@ header
     @include marginSides(7.5vw, 0)
   @include mobile()
     @include flexAndGap(3vw)
-    @include marginSides(3vw, 0)
+    @include marginSides(5vw, 0)
 
 .main-logo, .logo
   object-fit: cover
@@ -102,12 +102,19 @@ header
     align-items: center
     margin: 30px 13% 0 0
 
+.avatar-container
+  @include mobile()
+    display: flex
+    justify-content: center
+
 .greetings-container
   padding-top: 50px
   @include notebook()
     padding-top: 30px
   @include mobile()
     padding-top: 0
+    display: flex
+    justify-content: center
 
 .greetings
   margin: 0
@@ -162,6 +169,9 @@ header
   @include notebook()
     @include textSettings(26px, 400, 24px)
     @include adaptive_font(26)
+  @include mobile()
+    @include textSettings(16px, 400, 20px)
+
 
 .tech-stack-heading, .project-heading
   margin: 0
@@ -169,6 +179,8 @@ header
   @include notebook()
     @include textSettings(38px, 700, 24px)
     @include adaptive_font(38)
+  @include mobile()
+    @include textSettings(20px, 700, 24px)
 
 .tech-icons
   width: 100%
@@ -182,6 +194,10 @@ header
     @include notebook()
       row-gap:  50px
       column-gap: 84px
+    @include mobile()
+      grid-template-columns: repeat(auto-fit, minmax(40px, 40px))
+      row-gap:  30px
+      column-gap: 40px
 
 .tech-icon
   object-fit: cover

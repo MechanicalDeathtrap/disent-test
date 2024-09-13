@@ -6,7 +6,7 @@ body {
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
   body {
-    margin: 21px 0 25px 0;
+    margin: 15px 0 25px 0;
   }
 }
 
@@ -56,7 +56,7 @@ header {
   header {
     display: flex;
     gap: 3vw;
-    margin-left: 3vw;
+    margin-left: 5vw;
     margin-right: 0;
   }
 }
@@ -158,6 +158,13 @@ header {
   }
 }
 
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .greetings-container {
   padding-top: 50px;
 }
@@ -169,6 +176,8 @@ header {
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .greetings-container {
     padding-top: 0;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -282,6 +291,14 @@ header {
     font-size: calc(14px + 0.75vw);
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .tech-stack-remark, .project-remark {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
 
 .tech-stack-heading, .project-heading {
   margin: 0;
@@ -299,6 +316,14 @@ header {
     font-size: calc(14px + 1.5vw);
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .tech-stack-heading, .project-heading {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+  }
+}
 
 .tech-icons {
   width: 100%;
@@ -314,6 +339,13 @@ header {
   .tech-icons__list {
     row-gap: 50px;
     column-gap: 84px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .tech-icons__list {
+    grid-template-columns: repeat(auto-fit, minmax(40px, 40px));
+    row-gap: 30px;
+    column-gap: 40px;
   }
 }
 
