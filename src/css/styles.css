@@ -59,6 +59,7 @@ header {
     margin-left: 5vw;
     margin-right: 0;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -86,7 +87,7 @@ header {
 }
 
 .mobile-menu-icon {
-  width: 34px;
+  width: 28px;
 }
 
 .links {
