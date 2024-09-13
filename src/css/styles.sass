@@ -40,6 +40,11 @@ header
   @include notebook()
     @include flexAndGap(10vw)
     @include marginSides(7.5vw, 0)
+  @include tablet()
+    @include flexAndGap(5vw)
+    @include marginSides(6vw, 0)
+    justify-content: space-between
+    align-items: center
   @include mobile()
     @include flexAndGap(3vw)
     @include marginSides(5vw, 0)
@@ -50,6 +55,8 @@ header
   object-fit: cover
   @include notebook()
     width: 77px
+  @include tablet()
+    width: 50px
   @include mobile()
     width: 35px
 
@@ -57,15 +64,21 @@ header
   display: none
   @include mobile()
     display: block
+  @include tablet()
+    display: block
 
 .mobile-menu-icon
   width: 28px
+  @include tablet()
+    width: 30px
 
 .links
   @include flexAndGap(51px)
   @include notebook()
     @include flexAndGap(41px)
   @include mobile()
+    display: none
+  @include tablet()
     display: none
 
 .navigation-list
@@ -114,9 +127,17 @@ header
     gap: 30px
     align-items: center
     margin: 30px 13% 0 0
+  @include tablet()
+    flex-direction: column-reverse
+    gap: 40px
+    align-items: center
+    margin: 40px 13% 0 0
 
 .avatar-container
   @include mobile()
+    display: flex
+    justify-content: center
+  @include tablet()
     display: flex
     justify-content: center
 
@@ -140,6 +161,9 @@ header
   @include mobile()
     @include textSettings(24px, 700, 15px)
     @include adaptive_font(24)
+  @include tablet()
+    @include textSettings(36px, 700, 35px)
+    @include adaptive_font(36)
 
 .gradient-text
   color: transparent

@@ -52,6 +52,16 @@ header {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  header {
+    display: flex;
+    gap: 5vw;
+    margin-left: 6vw;
+    margin-right: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 480px) and (min-width: 320px) {
   header {
     display: flex;
@@ -71,6 +81,11 @@ header {
     width: 77px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .main-logo, .logo {
+    width: 50px;
+  }
+}
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .main-logo, .logo {
     width: 35px;
@@ -85,9 +100,19 @@ header {
     display: block;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .mobile-menu-container {
+    display: block;
+  }
+}
 
 .mobile-menu-icon {
   width: 28px;
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .mobile-menu-icon {
+    width: 30px;
+  }
 }
 
 .links {
@@ -101,6 +126,11 @@ header {
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
+  .links {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .links {
     display: none;
   }
@@ -173,8 +203,22 @@ header {
     margin: 30px 13% 0 0;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .greeting-banner {
+    flex-direction: column-reverse;
+    gap: 40px;
+    align-items: center;
+    margin: 40px 13% 0 0;
+  }
+}
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
+  .avatar-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .avatar-container {
     display: flex;
     justify-content: center;
@@ -222,6 +266,15 @@ header {
     line-height: 15px;
     font-style: normal;
     font-size: calc(14px + 0.625vw);
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .greetings {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 35px;
+    font-style: normal;
+    font-size: calc(14px + 1.375vw);
   }
 }
 
