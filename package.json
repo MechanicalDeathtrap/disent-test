@@ -2,12 +2,14 @@
   "name": "disent-test",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "sass": "^1.78.0"
+  },
+  "devDependencies": {
+    "prettier": "3.3.3"
   }
 }

@@ -25,10 +25,11 @@ a {
 }
 
 h1 {
-  color: #42446E;
+  color: #42446e;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -73,21 +74,25 @@ header {
   }
 }
 
-.main-logo, .logo {
+.main-logo,
+.logo {
   object-fit: cover;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
-  .main-logo, .logo {
+  .main-logo,
+  .logo {
     width: 77px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .main-logo, .logo {
+  .main-logo,
+  .logo {
     width: 50px;
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .main-logo, .logo {
+  .main-logo,
+  .logo {
     width: 35px;
   }
 }
@@ -162,7 +167,8 @@ header {
     font-size: calc(14px + 0.15625vw);
   }
 }
-.navigation-list__text-link:hover, .navigation-list__text-link__header:hover {
+.navigation-list__text-link:hover,
+.navigation-list__text-link__header:hover {
   color: rgba(102, 102, 102, 0.5);
 }
 
@@ -280,7 +286,7 @@ header {
 
 .gradient-text {
   color: transparent;
-  background-image: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+  background-image: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
   background-clip: text;
 }
 
@@ -340,32 +346,37 @@ header {
   }
 }
 
-.tech-stack-headings, .project-headings {
+.tech-stack-headings,
+.project-headings {
   flex-direction: column;
   align-items: center;
   display: flex;
   gap: 49px;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
-  .tech-stack-headings, .project-headings {
+  .tech-stack-headings,
+  .project-headings {
     display: flex;
     gap: 29px;
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .tech-stack-headings, .project-headings {
+  .tech-stack-headings,
+  .project-headings {
     display: flex;
     gap: 15px;
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .tech-stack-headings, .project-headings {
+  .tech-stack-headings,
+  .project-headings {
     display: flex;
     gap: 25px;
   }
 }
 
-.tech-stack-remark, .project-remark {
+.tech-stack-remark,
+.project-remark {
   color: #666;
   font-weight: 400;
   font-size: 32px;
@@ -373,7 +384,8 @@ header {
   font-style: normal;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
-  .tech-stack-remark, .project-remark {
+  .tech-stack-remark,
+  .project-remark {
     font-weight: 400;
     font-size: 26px;
     line-height: 24px;
@@ -382,7 +394,8 @@ header {
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .tech-stack-remark, .project-remark {
+  .tech-stack-remark,
+  .project-remark {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -390,7 +403,8 @@ header {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .tech-stack-remark, .project-remark {
+  .tech-stack-remark,
+  .project-remark {
     font-weight: 400;
     font-size: 24px;
     line-height: 20px;
@@ -398,7 +412,8 @@ header {
   }
 }
 
-.tech-stack-heading, .project-heading {
+.tech-stack-heading,
+.project-heading {
   margin: 0;
   font-weight: 900;
   font-size: 48px;
@@ -406,7 +421,8 @@ header {
   font-style: normal;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
-  .tech-stack-heading, .project-heading {
+  .tech-stack-heading,
+  .project-heading {
     font-weight: 700;
     font-size: 38px;
     line-height: 24px;
@@ -415,7 +431,8 @@ header {
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .tech-stack-heading, .project-heading {
+  .tech-stack-heading,
+  .project-heading {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -423,7 +440,8 @@ header {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .tech-stack-heading, .project-heading {
+  .tech-stack-heading,
+  .project-heading {
     font-weight: 700;
     font-size: 30px;
     line-height: 24px;
@@ -653,7 +671,7 @@ header {
 }
 
 .project-stack {
-  color: #42446E;
+  color: #42446e;
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
@@ -740,7 +758,9 @@ header {
 .project-link {
   color: #000;
   border-bottom: 1px solid #000;
-  transition: color 0.5s, border-bottom-color;
+  transition:
+    color 0.5s,
+    border-bottom-color;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .project-link {
@@ -892,7 +912,7 @@ footer {
   }
 }
 .contacts__contact {
-  color: #42446E;
+  color: #42446e;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -1015,28 +1035,43 @@ footer {
 }
 
 .footer-link {
-  color: #42446E;
+  color: #42446e;
 }
 
 .gradient-first {
   color: transparent;
-  background-image: linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%);
+  background-image: linear-gradient(90deg, #13b0f5 -2.06%, #e70faa 100%);
   background-clip: text;
 }
 
 .gradient-second {
   color: transparent;
-  background-image: linear-gradient(90deg, rgb(19, 176, 245) 0%, rgb(121, 99, 209) 0%, rgb(149, 77, 199) 53%, rgb(178, 55, 189) 100%, rgb(231, 15, 170) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgb(19, 176, 245) 0%,
+    rgb(121, 99, 209) 0%,
+    rgb(149, 77, 199) 53%,
+    rgb(178, 55, 189) 100%,
+    rgb(231, 15, 170) 100%
+  );
   background-clip: text;
 }
 
 .gradient-third {
   color: transparent;
-  background-image: linear-gradient(90deg, rgb(19, 176, 245) 0%, rgb(121, 99, 209) 0%, rgb(149, 77, 199) 0%, rgb(178, 55, 189) 0%, rgb(231, 15, 170) 100%);
+  background-image: linear-gradient(
+    90deg,
+    rgb(19, 176, 245) 0%,
+    rgb(121, 99, 209) 0%,
+    rgb(149, 77, 199) 0%,
+    rgb(178, 55, 189) 0%,
+    rgb(231, 15, 170) 100%
+  );
   background-clip: text;
 }
 
-.copyright, .phone-number {
+.copyright,
+.phone-number {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -1044,7 +1079,8 @@ footer {
   font-size: calc(14px + 0.25vw);
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
-  .copyright, .phone-number {
+  .copyright,
+  .phone-number {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -1052,7 +1088,8 @@ footer {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
-  .copyright, .phone-number {
+  .copyright,
+  .phone-number {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
