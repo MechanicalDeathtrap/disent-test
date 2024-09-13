@@ -427,10 +427,10 @@ header {
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .project-cards__list {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
+    column-gap: 20px;
+    grid-template-columns: repeat(1, 290px);
   }
 }
 

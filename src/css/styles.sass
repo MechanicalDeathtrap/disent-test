@@ -251,10 +251,10 @@ header
       flex-direction: column
       justify-content: center
     @include mobile()
-      display: flex
-      gap: 20px
-      flex-direction: column
+      display: grid
       justify-content: center
+      column-gap: 20px
+      grid-template-columns: repeat(1, 290px)
 
 .card
   box-shadow: 2px 2px 100px 0 $card-shadow
