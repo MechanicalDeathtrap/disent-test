@@ -206,7 +206,7 @@ header {
 @media screen and (max-width: 768px) and (min-width: 480px) {
   .greeting-banner {
     flex-direction: column-reverse;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
     margin: 40px 13% 0 0;
   }
@@ -297,6 +297,11 @@ header {
     width: 200px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .avatar {
+    width: 250px;
+  }
+}
 
 .tech-stack-banner {
   margin-top: 323px;
@@ -325,6 +330,15 @@ header {
     gap: 40px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .tech-stack-banner {
+    margin-top: 150px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    gap: 60px;
+  }
+}
 
 .tech-stack-headings, .project-headings {
   flex-direction: column;
@@ -342,6 +356,12 @@ header {
   .tech-stack-headings, .project-headings {
     display: flex;
     gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .tech-stack-headings, .project-headings {
+    display: flex;
+    gap: 25px;
   }
 }
 
@@ -369,6 +389,14 @@ header {
     font-style: normal;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .tech-stack-remark, .project-remark {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
 
 .tech-stack-heading, .project-heading {
   margin: 0;
@@ -390,6 +418,14 @@ header {
   .tech-stack-heading, .project-heading {
     font-weight: 700;
     font-size: 20px;
+    line-height: 24px;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .tech-stack-heading, .project-heading {
+    font-weight: 700;
+    font-size: 30px;
     line-height: 24px;
     font-style: normal;
   }

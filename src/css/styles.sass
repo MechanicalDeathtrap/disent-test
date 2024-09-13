@@ -129,7 +129,7 @@ header
     margin: 30px 13% 0 0
   @include tablet()
     flex-direction: column-reverse
-    gap: 40px
+    gap: 30px
     align-items: center
     margin: 40px 13% 0 0
 
@@ -176,6 +176,8 @@ header
     width: 279px
   @include mobile()
     width: 200px
+  @include tablet()
+    width: 250px
 
 .tech-stack-banner
   margin-top: 323px
@@ -191,6 +193,10 @@ header
     margin-top: 100px
     @include marginSides(30px, 30px) //184 201
     @include flexAndGap(40px)
+  @include tablet()
+    margin-top: 150px
+    @include marginSides(60px, 60px) //184 201
+    @include flexAndGap(60px)
 
 .tech-stack-headings, .project-headings
   flex-direction: column
@@ -200,6 +206,8 @@ header
     @include flexAndGap(29px)
   @include mobile()
     @include flexAndGap(15px)
+  @include tablet()
+    @include flexAndGap(25px)
 
 .tech-stack-remark, .project-remark
   color: $text-grey
@@ -209,6 +217,8 @@ header
     @include adaptive_font(26)
   @include mobile()
     @include textSettings(16px, 400, 20px)
+  @include tablet()
+    @include textSettings(24px, 400, 20px)
 
 
 .tech-stack-heading, .project-heading
@@ -219,6 +229,8 @@ header
     @include adaptive_font(38)
   @include mobile()
     @include textSettings(20px, 700, 24px)
+  @include tablet()
+    @include textSettings(30px, 700, 24px)
 
 .tech-icons
   width: 100%
