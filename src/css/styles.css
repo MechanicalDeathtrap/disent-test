@@ -639,6 +639,14 @@ header {
     font-style: normal;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .project-link {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
 
 .project-link:hover {
   color: #666;
@@ -697,7 +705,9 @@ footer {
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .contacts-links {
     display: flex;
-    gap: 33px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -753,6 +763,14 @@ footer {
     font-size: calc(14px + 0vw);
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .contacts__contact {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    font-style: normal;
+  }
+}
 
 .messenger-icon {
   object-fit: cover;
@@ -760,6 +778,11 @@ footer {
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .messenger-icon {
     width: 20px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .messenger-icon {
+    width: 15px;
   }
 }
 

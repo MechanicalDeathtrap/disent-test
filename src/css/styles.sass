@@ -345,6 +345,8 @@ header
   transition: color 0.5s, border-bottom-color
   @include notebook()
     @include textSettings(14px, 300, 24px)
+  @include mobile()
+    @include textSettings(12px, 300, 20px)
 
 .project-link:hover
   color: $text-grey
@@ -379,7 +381,9 @@ footer
   @include notebook()
     @include flexAndGap(53px)
   @include mobile()
-    @include flexAndGap(33px)
+    display: flex
+    flex-direction: column
+    @include flexAndGap(20px)
 
 .messengers
   @include flexAndGap(20px)
@@ -404,11 +408,15 @@ footer
     @include notebook()
       @include textSettings(14px, 400, 24px)
       @include adaptive_font(14)
+    @include mobile()
+      @include textSettings(12px, 400, 18px)
 
 .messenger-icon
   object-fit: cover
   @include notebook()
     width: 20px
+  @include mobile()
+    width: 15px
 
 .footer-navigation
   margin-top: 5px
