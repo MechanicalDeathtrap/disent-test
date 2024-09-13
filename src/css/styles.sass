@@ -31,6 +31,8 @@ p
   color: $text-grey
   margin: 0
 
+//header
+
 header
   font-family: "DM Sans" ,sans-serif
   @include flexAndGap(19.1vw)
@@ -41,6 +43,7 @@ header
   @include mobile()
     @include flexAndGap(3vw)
     @include marginSides(5vw, 0)
+    justify-content: space-between
 
 .main-logo, .logo
   object-fit: cover
@@ -48,6 +51,11 @@ header
     width: 77px
   @include mobile()
     width: 35px
+
+.mobile-menu-container
+  display: none
+  @include mobile()
+    width: 34px
 
 .links
   @include flexAndGap(51px)
@@ -444,7 +452,7 @@ footer
   @include mobile()
     margin-top: 20px
     padding-left: 7px
-    @include flexAndGap(15px)
+    @include flexAndGap(20px)
 
 .footer-link
   color: $greetings-grey
