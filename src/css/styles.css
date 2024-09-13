@@ -47,6 +47,14 @@ header {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  header {
+    display: flex;
+    gap: 3vw;
+    margin-left: 3vw;
+    margin-right: 0;
+  }
+}
 
 .main-logo, .logo {
   object-fit: cover;
@@ -54,6 +62,11 @@ header {
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .main-logo, .logo {
     width: 77px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .main-logo, .logo {
+    width: 20px;
   }
 }
 
