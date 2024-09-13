@@ -383,7 +383,7 @@ footer
   @include mobile()
     display: flex
     flex-direction: column
-    @include flexAndGap(20px)
+    @include flexAndGap(10px)
 
 .messengers
   @include flexAndGap(20px)
@@ -399,7 +399,7 @@ footer
   @include mobile()
     display: flex
     flex-direction: column
-    @include flexAndGap(10px)
+    @include flexAndGap(7px)
 
   &__contact
     color: $greetings-grey
@@ -416,7 +416,7 @@ footer
   @include notebook()
     width: 20px
   @include mobile()
-    width: 15px
+    width: 18px
 
 .footer-navigation
   margin-top: 5px
@@ -437,6 +437,11 @@ footer
     margin-top: 35px
     padding-left: 7px
     @include flexAndGap(26px)
+  @include mobile()
+    flex-direction: column
+    margin-top: 20px
+    padding-left: 7px
+    @include flexAndGap(15px)
 
 .footer-link
   color: $greetings-grey
@@ -459,6 +464,8 @@ footer
 .copyright, .phone-number
   @include textSettings(18px, 400, 26px)
   @include adaptive_font(18)
+  @include mobile()
+    @include textSettings(14px, 400, 20px)
 
 .copyright
   @include notebook()
