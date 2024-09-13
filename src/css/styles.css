@@ -82,8 +82,11 @@ header {
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .mobile-menu-container {
     display: block;
-    width: 34px;
   }
+}
+
+.mobile-menu-icon {
+  width: 34px;
 }
 
 .links {
