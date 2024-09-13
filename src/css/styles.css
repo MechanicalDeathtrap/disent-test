@@ -497,6 +497,13 @@ header {
     gap: 36px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .project-section {
+    margin: 100px 0 0 0;
+    display: flex;
+    gap: 46px;
+  }
+}
 
 .project-cards {
   width: 100vw;
@@ -776,6 +783,13 @@ footer {
     margin-right: 4vw;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  footer {
+    margin-top: 150px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+}
 
 .messengers-links {
   display: flex;
@@ -786,6 +800,11 @@ footer {
 @media screen and (max-width: 1280px) and (min-width: 768px) {
   .messengers-links {
     padding-bottom: 32px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .messengers-links {
+    padding-bottom: 30px;
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
@@ -814,12 +833,26 @@ footer {
     gap: 10px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .contacts-links {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+  }
+}
 
 .messengers {
   display: flex;
   gap: 20px;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
+  .messengers {
+    display: flex;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .messengers {
     display: flex;
     gap: 15px;
@@ -850,6 +883,14 @@ footer {
     gap: 7px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 12px;
+  }
+}
 .contacts__contact {
   color: #42446E;
   font-weight: 400;
@@ -875,11 +916,24 @@ footer {
     font-style: normal;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .contacts__contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
 
 .messenger-icon {
   object-fit: cover;
 }
 @media screen and (max-width: 1280px) and (min-width: 768px) {
+  .messenger-icon {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
   .messenger-icon {
     width: 20px;
   }
@@ -919,6 +973,14 @@ footer {
     gap: 10px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .footer-navigation {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+  }
+}
 
 .navigation-links {
   margin-top: 55px;
@@ -938,6 +1000,14 @@ footer {
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .navigation-links {
     margin-top: 20px;
+    padding-left: 7px;
+    display: flex;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .navigation-links {
+    margin-top: 25px;
     padding-left: 7px;
     display: flex;
     gap: 20px;
@@ -977,6 +1047,14 @@ footer {
   .copyright, .phone-number {
     font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .copyright, .phone-number {
+    font-weight: 400;
+    font-size: 16px;
     line-height: 20px;
     font-style: normal;
   }

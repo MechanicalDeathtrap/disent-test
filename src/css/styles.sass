@@ -273,7 +273,9 @@ header
   @include mobile()
     margin: 90px 0 0 0
     @include flexAndGap(36px)
-
+  @include tablet()
+    margin: 100px 0 0 0
+    @include flexAndGap(46px)
 
 .project-cards
   width: 100vw
@@ -411,6 +413,9 @@ footer
   @include mobile()
     margin-top: 100px
     @include marginSides(4vw, 4vw)
+  @include tablet()
+    margin-top: 150px
+    @include marginSides(7vw, 7vw)
 
 .messengers-links
   display: flex
@@ -419,6 +424,8 @@ footer
   padding-bottom: 42px
   @include notebook()
     padding-bottom: 32px
+  @include tablet()
+    padding-bottom: 30px
   @include mobile()
     padding-bottom: 25px
 
@@ -432,10 +439,16 @@ footer
     display: flex
     flex-direction: column
     @include flexAndGap(10px)
+  @include tablet()
+    display: flex
+    flex-direction: column
+    @include flexAndGap(15px)
 
 .messengers
   @include flexAndGap(20px)
   @include notebook()
+    @include flexAndGap(15px)
+  @include tablet()
     @include flexAndGap(15px)
   @include mobile()
     @include flexAndGap(10px)
@@ -448,6 +461,10 @@ footer
     display: flex
     flex-direction: column
     @include flexAndGap(7px)
+  @include tablet()
+    display: flex
+    flex-direction: column
+    @include flexAndGap(12px)
 
   &__contact
     color: $greetings-grey
@@ -458,10 +475,14 @@ footer
       @include adaptive_font(14)
     @include mobile()
       @include textSettings(12px, 400, 18px)
+    @include tablet()
+      @include textSettings(14px, 400, 20px)
 
 .messenger-icon
   object-fit: cover
   @include notebook()
+    width: 20px
+  @include tablet()
     width: 20px
   @include mobile()
     width: 18px
@@ -479,6 +500,10 @@ footer
     display: flex
     flex-direction: column
     @include flexAndGap(10px)
+  @include tablet()
+    display: flex
+    flex-direction: column
+    @include flexAndGap(20px)
 
 .navigation-links
   margin-top: 55px
@@ -491,6 +516,10 @@ footer
     @include flexAndGap(26px)
   @include mobile()
     margin-top: 20px
+    padding-left: 7px
+    @include flexAndGap(20px)
+  @include tablet()
+    margin-top: 25px
     padding-left: 7px
     @include flexAndGap(20px)
 
@@ -517,6 +546,8 @@ footer
   @include adaptive_font(18)
   @include mobile()
     @include textSettings(14px, 400, 20px)
+  @include tablet()
+    @include textSettings(16px, 400, 20px)
 
 .copyright
   @include notebook()
