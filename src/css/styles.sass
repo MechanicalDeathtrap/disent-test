@@ -45,12 +45,14 @@ header
   @include notebook()
     width: 77px
   @include mobile()
-    width: 20px
+    width: 35px
 
 .links
   @include flexAndGap(51px)
   @include notebook()
     @include flexAndGap(41px)
+  @include mobile()
+    display: none
 
 .navigation-list
   margin-top: 8px
@@ -93,11 +95,16 @@ header
   justify-content: space-between
   @include notebook()
     margin: 130px 13% 0 11vw
+  @include mobile()
+    flex-direction: column
+    margin: 30px 13% 0 0
 
 .greetings-container
   padding-top: 50px
   @include notebook()
     padding-top: 30px
+  @include mobile()
+    padding-top: 0
 
 .greetings
   margin: 0
@@ -106,6 +113,9 @@ header
   @include notebook()
     @include textSettings(48px, 700, 50px)
     @include adaptive_font(48)
+  @include mobile()
+    @include textSettings(24px, 700, 25px)
+    @include adaptive_font(24)
 
 .gradient-text
   color: transparent
@@ -116,7 +126,8 @@ header
   object-fit: cover
   @include notebook()
     width: 279px
-    //width: 25.9vw
+  @include mobile()
+    width: 200px
 
 .tech-stack-banner
   margin-top: 323px
