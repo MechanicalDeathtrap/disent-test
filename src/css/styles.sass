@@ -7,6 +7,8 @@ body
   font-family: "Poppins", sans-serif
   box-sizing: border-box
   overflow-x: hidden
+  @include mobile()
+    margin: 21px 0 25px 0
 
 li
   list-style: none
@@ -96,7 +98,8 @@ header
   @include notebook()
     margin: 130px 13% 0 11vw
   @include mobile()
-    flex-direction: column
+    flex-direction: column-reverse
+    align-items: center
     margin: 30px 13% 0 0
 
 .greetings-container
@@ -114,7 +117,7 @@ header
     @include textSettings(48px, 700, 50px)
     @include adaptive_font(48)
   @include mobile()
-    @include textSettings(24px, 700, 25px)
+    @include textSettings(24px, 700, 15px)
     @include adaptive_font(24)
 
 .gradient-text
@@ -131,17 +134,18 @@ header
 
 .tech-stack-banner
   margin-top: 323px
-  @include notebook()
-    margin-top: 253px
-
-.tech-stack-banner
   flex-direction: column
   align-items: center
   @include marginSides(134px, 130px) //184 201
   @include flexAndGap(140px)
   @include notebook()
+    margin-top: 253px
     @include marginSides(94px, 90px)
     @include flexAndGap(100px)
+  @include mobile()
+    margin-top: 100px
+    @include marginSides(30px, 30px) //184 201
+    @include flexAndGap(40px)
 
 .tech-stack-headings, .project-headings
   flex-direction: column
@@ -149,6 +153,8 @@ header
   @include flexAndGap(49px)
   @include notebook()
     @include flexAndGap(29px)
+  @include mobile()
+    @include flexAndGap(15px)
 
 .tech-stack-remark, .project-remark
   color: $text-grey
