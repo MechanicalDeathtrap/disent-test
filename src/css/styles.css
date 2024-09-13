@@ -440,9 +440,20 @@ header {
   transition: box-shadow 0.5s;
   width: 373px;
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .card {
+    width: 290px;
+  }
+}
 
 .card:hover {
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .card-image {
+    width: 290px;
+  }
 }
 
 .card-info {
