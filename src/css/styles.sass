@@ -427,6 +427,10 @@ footer
     @include textSettings(14px, 400, 24px)
     @include adaptive_font(14)
     @include flexAndGap(36px)
+  @include mobile()
+    display: flex
+    flex-direction: column
+    @include flexAndGap(10px)
 
 .navigation-links
   margin-top: 55px
@@ -438,7 +442,6 @@ footer
     padding-left: 7px
     @include flexAndGap(26px)
   @include mobile()
-    flex-direction: column
     margin-top: 20px
     padding-left: 7px
     @include flexAndGap(15px)
