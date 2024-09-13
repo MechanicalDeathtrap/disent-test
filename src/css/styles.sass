@@ -223,7 +223,7 @@ header
     margin: 188px 189px 0 193px
     @include flexAndGap(56px)
   @include mobile()
-    margin: 90px 0 0 100px
+    margin: 90px 0 0 0
     @include flexAndGap(36px)
 
 
@@ -275,48 +275,69 @@ header
   padding: 23px 31px 25px 28px
   flex-direction: column
   @include flexAndGap(21px)
+  @include mobile()
+    padding: 18px 26px 20px 23px
+    @include flexAndGap(16px)
 
 .about-project-info
   flex-direction: column
   @include flexAndGap(12px)
+  @include mobile()
+    @include flexAndGap(7px)
 
 .small-card-info
   flex-direction: column
   @include flexAndGap(17px)
+  @include mobile()
+    @include flexAndGap(12px)
 
 .card-heading
   color: $card-heading-color
   @include textSettings(28px, 500, 26px)
   @include notebook()
     @include textSettings(24px, 500, 24px)
+  @include mobile()
+    @include textSettings(20px, 500, 20px)
 
 .card-description
   @include textSettings(18px, 300, 26px)
   @include notebook()
     @include textSettings(16px, 300, 24px)
+  @include mobile()
+    @include textSettings(16px, 500, 20px)
 
 .project-stack
   color: $greetings-grey
   @include textSettings(14px, 300, 26px)
   @include notebook()
     @include textSettings(12px, 300, 24px)
+  @include mobile()
+    @include textSettings(12px, 300, 20px)
 
 .bold
   @include textSettings(16px, 400, 26px)
   @include notebook()
     @include textSettings(14px, 400, 24px)
+  @include mobile()
+    @include textSettings(14px, 400, 20px)
 
 .project-links
   @include flexAndGap(48px)
   @include notebook()
     @include flexAndGap(34px)
+  @include mobile()
+    @include flexAndGap(24px)
 
 .link-container
   align-items: center
   @include flexAndGap(12px)
+  @include mobile()
+    @include flexAndGap(8px)
 
 .link-container > img
   width: 20px
+  @include mobile()
+    width: 15px
 
 .project-link
   color: $card-heading-color
