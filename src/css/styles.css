@@ -153,6 +153,7 @@ header {
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .greeting-banner {
     flex-direction: column-reverse;
+    gap: 30px;
     align-items: center;
     margin: 30px 13% 0 0;
   }
@@ -177,6 +178,7 @@ header {
   .greetings-container {
     padding-top: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }
@@ -358,6 +360,12 @@ header {
     height: auto;
   }
 }
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .tech-icon {
+    width: 40px;
+    height: auto;
+  }
+}
 
 .tech-stack-remark {
   color: #666;
@@ -376,6 +384,13 @@ header {
     margin: 188px 189px 0 193px;
     display: flex;
     gap: 56px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .project-section {
+    margin: 90px 0 0 100px;
+    display: flex;
+    gap: 36px;
   }
 }
 
@@ -403,6 +418,14 @@ header {
   }
 }
 @media screen and (max-width: 768px) and (min-width: 480px) {
+  .project-cards__list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
   .project-cards__list {
     display: flex;
     gap: 20px;

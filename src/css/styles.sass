@@ -99,6 +99,7 @@ header
     margin: 130px 13% 0 11vw
   @include mobile()
     flex-direction: column-reverse
+    gap: 30px
     align-items: center
     margin: 30px 13% 0 0
 
@@ -114,6 +115,7 @@ header
   @include mobile()
     padding-top: 0
     display: flex
+    flex-direction: column
     justify-content: center
 
 .greetings
@@ -204,6 +206,9 @@ header
   @include notebook()
     width: 100px
     height: auto
+  @include mobile()
+    width: 40px
+    height: auto
 
 .tech-stack-remark
   color: $text-grey
@@ -217,6 +222,9 @@ header
   @include notebook()
     margin: 188px 189px 0 193px
     @include flexAndGap(56px)
+  @include mobile()
+    margin: 90px 0 0 100px
+    @include flexAndGap(36px)
 
 
 .project-cards
@@ -238,6 +246,11 @@ header
       row-gap:  54px
       column-gap: 30px
     @include tablet()
+      display: flex
+      gap: 20px
+      flex-direction: column
+      justify-content: center
+    @include mobile()
       display: flex
       gap: 20px
       flex-direction: column
